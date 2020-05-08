@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Temperature with Nodejs</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style media="screen">
+
+    html, body {
+  height:100%;
+}
+body {
+  display:flex;
+  align-items:center;
+  background: #f3f3f3;
+}
+    </style>
+  </head>
+  <body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+    <div class="container">
+      <div style="background:white;" class="row justify-content-center align-self-center">
+          <h1 style="padding: 15px;">Link:<span style="color: blue;" id="tittleAdress"></span></h1>
+          
+       </div>
+       <br>
+          <br>
+        <div style=" height: 300px; background: white;" class="row justify-content-center align-self-center">
+         
+    <div class="col-md-5 col-md-offset-1">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading orange"><i class=""><img style="margin-top: 10px;" width="72px" src="fotor.png" alt=""></i></div></a>
+        <div class="circle-tile-content orange">
+          <div class="circle-tile-description text-faded"> Ohmios</div>
+          <div id="photo" class="circle-tile-number text-faded ">278</div>
+          <br>
+          <a class="circle-tile-footer" href="https://es.wikipedia.org/wiki/Fotorresistor">Fotoresistencia <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+        
+    <div class="col-md-5 col-md-offset-1">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading green"><i class=""><img style="margin-top: 12px;" width="72px" src="ut.png" alt=""></i></div></a>
+        <div class="circle-tile-content green">
+          <div class="circle-tile-description text-faded"> Basuras</div>
+          <div id="ultrasonico" class="circle-tile-number text-faded "></div>
+        <br>
+          <a class="circle-tile-footer" href="https://es.wikipedia.org/wiki/Sensor_ultras%C3%B3nico">Sensor Ultrasónico <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+         
+         
+      </div>
+      <div style=" height: 300px; background: white;" class="row justify-content-center align-self-center">
+      
+      <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 ">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading blue"><i class=""><img style="margin-top: 12px;" width="72px" src="diode.png" alt=""></i></div></a>
+        <div class="circle-tile-content blue">
+          <div id="other" class="circle-tile-number text-faded "><input class="" style="width: 100%; text-align: center; text-decoration: none; background: none; border: none; color: skyblue;" id="ledd" type="button" value="encender"></div>
+          <br>
+          <br>
+          <a class="circle-tile-footer" href="https://es.wikipedia.org/wiki/Led">Diodo Led<i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+     
+     <div class="col-md-5 col-md-offset-1 col-xs-4">
+      <div class="circle-tile ">
+        <a href="#"><div class="circle-tile-heading red"><i class=""><img style="margin-top: 12px;" width="72px" src="ultras.png" alt=""></i></div></a>
+        <div class="circle-tile-content red">
+          <div id="equis" class="circle-tile-description text-faded"> </div>
+          <div id="ye" class="circle-tile-description text-faded"> </div>
+          
+          <br>
+          <a class="circle-tile-footer" href="https://es.wikipedia.org/wiki/Aceler%C3%B3metro">Acelerómetro <i class="fa fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    </div>
+
+    <script src="socket.io/socket.io.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
